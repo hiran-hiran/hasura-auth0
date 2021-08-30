@@ -1,0 +1,5 @@
+mutation insertTodo($title: String!, $content: String) {
+  insert_todos(objects: { title: $title, content: $content }) {
+    affected_rows
+  }
+}
